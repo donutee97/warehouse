@@ -15,8 +15,26 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # 1. Catálogo de Productos
+    path('productos/', include(('productos.urls', 'productos'), namespace='productos')),
+    # 2. Categorías y Marcas
+    path('categorias/', include(('categorias.urls', 'categorias'), namespace='categorias')),
+    # 3. Proveedores
+    path('proveedores/', include(('proveedores.urls', 'proveedores'), namespace='proveedores')),
+    # 4. Clientes
+    path('clientes/', include(('clientes.urls', 'clientes'), namespace='clientes')),
+    # 5. Almacenes / Bodegas
+    path('almacenes/', include(('almacenes.urls', 'almacenes'), namespace='almacenes')),
+    # 6. Compras y Entradas
+    path('compras/', include(('compras.urls', 'compras'), namespace='compras')),
+    # 7. Ventas y Salidas
+    path('ventas/', include(('ventas.urls', 'ventas'), namespace='ventas')),
+    # 8. Movimientos y Stock
+    path('movimientos/', include(('movimientos.urls', 'movimientos'), namespace='movimientos')),
+    # 9. Reportes y Métricas
+    path('reportes/', include(('reportes.urls', 'reportes'), namespace='reportes')),
 ]
