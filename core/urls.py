@@ -22,21 +22,21 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('admin/', admin.site.urls),
     # 1. Catálogo de Productos
-    # path('productos/', include(('productos.urls', 'productos'), namespace='productos')),
+    # path('productos/', include(('apps.productos.urls', 'productos'), namespace='productos')),
     # # 2. Categorías y Marcas
-    # path('categorias/', include(('categorias.urls', 'categorias'), namespace='categorias')),
+    # path('categorias/', include(('apps.categorias.urls', 'categorias'), namespace='categorias')),
     # # 3. Proveedores
-    # path('proveedores/', include(('proveedores.urls', 'proveedores'), namespace='proveedores')),
+    # path('proveedores/', include(('apps.proveedores.urls', 'proveedores'), namespace='proveedores')),
     # # 4. Clientes
-    # path('clientes/', include(('clientes.urls', 'clientes'), namespace='clientes')),
+    # path('clientes/', include(('apps.clientes.urls', 'clientes'), namespace='clientes')),
     # # 5. Almacenes / Bodegas
-    # path('almacenes/', include(('almacenes.urls', 'almacenes'), namespace='almacenes')),
+    # path('almacenes/', include(('apps.almacenes.urls', 'almacenes'), namespace='almacenes')),
     # # 6. Compras y Entradas
-    # path('compras/', include(('compras.urls', 'compras'), namespace='compras')),
+    # path('compras/', include(('apps.compras.urls', 'compras'), namespace='compras')),
     # # 7. Ventas y Salidas
-    # path('ventas/', include(('ventas.urls', 'ventas'), namespace='ventas')),
+    # path('ventas/', include(('apps.ventas.urls', 'ventas'), namespace='ventas')),
     # # 8. Movimientos y Stock
-    # path('movimientos/', include(('movimientos.urls', 'movimientos'), namespace='movimientos')),
+    # path('movimientos/', include(('apps.movimientos.urls', 'movimientos'), namespace='movimientos')),
     # # 9. Reportes y Métricas
-    # path('reportes/', include(('reportes.urls', 'reportes'), namespace='reportes')),
+    # path('reportes/', include(('apps.reportes.urls', 'reportes'), namespace='reportes')),
 ]

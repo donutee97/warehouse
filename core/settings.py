@@ -37,15 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'productos',
-    'categorias',
-    'proveedores',
-    'clientes',
-    'almacenes',
-    'compras',
-    'ventas',
-    'movimientos',
-    'reportes',
+    'apps.productos.apps.ProductosConfig',
+    'apps.categorias.apps.CategoriasConfig',
+    'apps.proveedores.apps.ProveedoresConfig',
+    'apps.clientes.apps.ClientesConfig',
+    'apps.almacenes.apps.AlmacenesConfig',
+    'apps.compras.apps.ComprasConfig',
+    'apps.ventas.apps.VentasConfig',
+    'apps.movimientos.apps.MovimientosConfig',
+    'apps.reportes.apps.ReportesConfig',
 ]
 
 MIDDLEWARE = [
@@ -124,7 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR / 'static/css']
+STATICFILES_DIRS = [BASE_DIR / 'static']
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
