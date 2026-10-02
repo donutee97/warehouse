@@ -31,3 +31,26 @@
 - reportes/
     - Métricas, dashboards de stock crítico, rotación de productos
     - LOGICA CRUD: Consultas agregadas (Count, Sum, Avg), productos más vendidos y valorización del stock.
+
+---
+
+### ARQUITECTURA: DJANGO PURO
+Ideal para módulos donde la navegación basada en formularios tradicionales, redirecciones estándar y el panel de administración resuelven la lógica sin necesidad de interactividad pesada en tiempo real.
+
+- CATEGORIAS
+- ALMACENES
+- PROVEEDORES
+
+### ARQUITECTURA: DJANGO + HTMX
+Perfecto para módulos que requieren actualizaciones parciales de la interfaz (modales, listados dinámicos, autocompletados o validaciones en tiempo real) sin la sobrecarga de escribir código JavaScript manual.
+
+- PRODUCTOS
+- CLIENTES
+- MOVIMIENTOS
+
+### ARQUITECTURA: DJANGO + JS VANILLA
+Diseñado para módulos interactivos complejos que se benefician de consumir endpoints JSON, renderizado completo en el lado del cliente y manipulación dinámica del DOM.
+
+- COMPRAS
+- VENTAS
+- REPORTES
