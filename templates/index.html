@@ -7,7 +7,7 @@
     <h1 style="text-align: center;">Inicio de WareHouse</h1>
     <div class="contenedor-modulos">
         <p class="modulo-ancho">productos</p>
-        <p class="modulo">categorias</p>
+        <p class="modulo"><a href="{% url 'categorias:lista_categorias' %}">categorias</a></p>
         <p class="modulo">proveedores</p>
         <p class="modulo">clientes</p>
         <p class="modulo">almacenes</p>
@@ -15,6 +15,7 @@
         <p class="modulo-ancho-2">ventas</p>
         <p class="modulo">movimientos</p>
         <p class="modulo">reportes</p>
+        
     </div>
 
 {% endblock %}

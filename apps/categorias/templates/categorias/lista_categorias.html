@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %} Categorías {% endblock title %}
+
+{% block content %}
+    <h1> Categorías </h1>
+
+    {% if categorias %}
+    <ul>
+        {% for cat in categorias %}
+            <li>
+                <strong>{{cat.nombre}}</strong>
+                {% if cat.subcategorias.all %}
+                    <ul>
+                    {% for sub in cat.subcategorias.all %}
+                        <li>{{sub.nombre}}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <p> No hay categorías registradas</p>
+    {% endif %}
+{% endblock  %}
