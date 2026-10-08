@@ -23,8 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # 1. Catálogo de Productos
     # path('productos/', include(('apps.productos.urls', 'productos'), namespace='productos')),
-    # # 2. Categorías y Marcas
-    # path('categorias/', include(('apps.categorias.urls', 'categorias'), namespace='categorias')),
+    path('categorias/', include(('apps.categorias.urls', 'categorias'), namespace='categorias')),
     # # 3. Proveedores
     # path('proveedores/', include(('apps.proveedores.urls', 'proveedores'), namespace='proveedores')),
     # # 4. Clientes
