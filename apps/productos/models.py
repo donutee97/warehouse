@@ -1,6 +1,6 @@
 from django.db import models
-from categorias.models import Categorias, Marca
-from proveedores.models import Proveedor
+from apps.proveedores.models import Proveedor
+from apps.categorias.models import Categorias, Marca
 
 class Productos(models.Model):
     sku = models.CharField(max_length=50, unique=True)

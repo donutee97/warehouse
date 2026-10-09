@@ -1,8 +1,8 @@
 from django.db import models
 
 from django.db import models
-from productos.models import Productos
-from almacenes.models import Almacen
+from apps.productos.models import Productos
+from apps.almacenes.models import Almacen
 
 class InventarioStock(models.Model):
     """
