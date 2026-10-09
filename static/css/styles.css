@@ -8,6 +8,7 @@
 body {
     color: #333;
     line-height: 1.6;
+    background-color: #00000015;
 }
 
 main {
@@ -16,6 +17,19 @@ main {
 
 a {
     color: #fff;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+th, td {
+    padding: 1px 15px;
+    border-radius: 2px;
 }
 /* Estilos básicos para el header */
 .header {
@@ -72,4 +86,18 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 20px;
+}
+
+.contenedor-body {
+    border:#000 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    align-items: center;
+}
+
+table {
+    margin: 0 auto;
+    border-radius: 2px;
 }
