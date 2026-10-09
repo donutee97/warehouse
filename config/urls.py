@@ -24,8 +24,7 @@ urlpatterns = [
     # 1. Catálogo de Productos
     # path('productos/', include(('apps.productos.urls', 'productos'), namespace='productos')),
     path('categorias/', include(('apps.categorias.urls', 'categorias'), namespace='categorias')),
-    # # 3. Proveedores
-    # path('proveedores/', include(('apps.proveedores.urls', 'proveedores'), namespace='proveedores')),
+    path('proveedores/', include(('apps.proveedores.urls', 'proveedores'), namespace='proveedores')),
     # # 4. Clientes
     # path('clientes/', include(('apps.clientes.urls', 'clientes'), namespace='clientes')),
     # # 5. Almacenes / Bodegas
