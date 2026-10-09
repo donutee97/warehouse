@@ -1,8 +1,8 @@
 from django.db import models
 
 from django.db.models import Sum
-from productos.models import Productos
-from ventas.models import DetalleVenta
+from apps.productos.models import Productos
+from apps.ventas.models import DetalleVenta
 
 def obtener_top_productos_vendidos():
     # Consulta ORM combinando Ventas y Productos

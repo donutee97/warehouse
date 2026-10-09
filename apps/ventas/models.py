@@ -1,9 +1,9 @@
 from django.db import models
 
 from django.db import models
-from clientes.models import Cliente
-from almacenes.models import Almacen
-from productos.models import Productos
+from apps.clientes.models import Cliente
+from apps.almacenes.models import Almacen
+from apps.productos.models import Productos
 
 class OrdenVenta(models.Model):
     fecha = models.DateTimeField(auto_now_add=True)
