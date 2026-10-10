@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Crear nuevo proveedor{% endblock %}
+
+{% block content %}
+    <div class="encabezado-body">
+        <h1>Crear nuevo proveedor</h1>
+        <a class="boton" href="{% url 'proveedores:lista' %}">Volver a la lista de proveedores</a>
+    </div>
+
+    <div class="contenedor-body">
+        <form action="{% url "proveedores:crear" %}" method="POST">
+            {% csrf_token %}
+            <p>
+                <label>Razón social</label>
+                <input type="text" id="razon_social" name='razon_social' required>
+            </p>
+
+            <p>
+                <label>NIT/RUT</label>
+                <input type="text" id="nit_rut" name='nit_rut' required>
+            </p>
+
+            <p>
+                <label>Email</label>
+                <input type="email" id="email" name='email' required>
+            </p>
+
+            <p>
+                <label>Teléfono</label>
+                <input type="text" id="telefono" name='telefono' required>
+            </p>
+
+            <button class="boton" type="submit">Guardar proveedor</button>
+        </form>
+    </div>
+{% endblock %}
