@@ -33,8 +33,7 @@ urlpatterns = [
     # path('compras/', include(('apps.compras.urls', 'compras'), namespace='compras')),
     # # 7. Ventas y Salidas
     # path('ventas/', include(('apps.ventas.urls', 'ventas'), namespace='ventas')),
-    # # 8. Movimientos y Stock
-    # path('movimientos/', include(('apps.movimientos.urls', 'movimientos'), namespace='movimientos')),
+    path('movimientos/', include(('apps.movimientos.urls', 'movimientos'), namespace='movimientos')),
     # # 9. Reportes y Métricas
     # path('reportes/', include(('apps.reportes.urls', 'reportes'), namespace='reportes')),
 ]

@@ -1,0 +1,22 @@
+<table border="1">
+    <thead>
+        <tr>
+        <th># movimiento</th>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Almacen</th>
+        <th>Detalle</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for m in movimientos_stock %}
+        <tr>
+            <td><strong>{{ m.id }}</strong></td>
+            <td>{{ m.producto.nombre }}</td>
+            <td>{{ m.cantidad }}</td>
+            <td>{{ m.almacen }}</td>
+            <td><a class="boton" href="{% url "movimientos:detalle" m.id %}">👁️ Ver</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

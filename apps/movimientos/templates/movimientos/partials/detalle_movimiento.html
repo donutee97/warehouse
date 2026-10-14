@@ -1,0 +1,18 @@
+<table border="1">
+    <thead>
+        <tr>
+        <th># movimiento</th>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Almacen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>{{ movimiento.id }}</strong></td>
+            <td>{{ movimiento.producto.nombre }}</td>
+            <td>{{ movimiento.cantidad }}</td>
+            <td>{{ movimiento.almacen }}</td>
+        </tr>
+    </tbody>
+</table>
