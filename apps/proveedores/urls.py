@@ -10,3 +10,8 @@ urlpatterns = [
     path('actualizar/<int:pk>/', views.actualizar, name='actualizar'),
     path('eliminar/<int:pk>', views.eliminar, name='eliminar'),
 ]
+
+
+
+
+

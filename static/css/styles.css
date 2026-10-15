@@ -36,6 +36,7 @@ table {
 a {
   color: #fff;
 }
+
 /* Estilos básicos para el header */
 .header {
   display: flex;
@@ -120,13 +121,35 @@ a {
 }
 
 .boton {
-  display: inline-block;
-  margin-left: auto;
-  padding: 10px 16px;
-  border-radius: 4px;
-  border: 1px solid #0056b3;
-  background-color: #007bff !important;
-  color: #fff !important;
-  font-weight: bold;
-  text-decoration: none;
+    display: inline-block;
+    margin-left: auto;
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: 1px solid #0056b3;
+    background-color: #007bff !important;
+    color: #fff !important;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
 }
+
+.contenedor-body form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contenedor-body form label {
+    display: block;
+    margin: 8px 0;
+    text-align: left;
+}
+
+.contenedor-body form input {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+}
+
