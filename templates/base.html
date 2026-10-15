@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 {% load static %}
+{% load django_htmx %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
     <title>{% block title %} Warehouse {% endblock %}</title>
-    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js" 
-          integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
-          crossorigin="anonymous">
-    </script>
+    {% htmx_script %}
   </head>
-  <body>
+  
+  <body hx-headers:inherited='{"x-csrftoken": "{{ csrf_token }}"}'>
     {% include "includes/_header.html" %}
     <main>{% block content %} {% endblock %}</main>
     {% include "includes/_footer.html" %}
