@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Detalle categoría{% endblock %}
+
+{% block content %}
+    <h1>Detalle categoría</h1>
+    
+    {% if categoria %}
+        <p><strong>Nombre:</strong> {{ categoria.nombre }}</p>
+        <p><strong>Descripción:</strong> {{ categoria.descripcion }}</p>
+    {% else %}
+        <p>No se encontró categoría</p>
+    {% endif %}
+{% endblock %}

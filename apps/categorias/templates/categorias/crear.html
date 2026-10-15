@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %} Crear formulario {% endblock  %}
+
+{% block content %}
+    <div class='encabezado-body'>
+        <h1> Crear nueva categoría </h1>
+    </div>
+
+    <div class="contenedor-body">
+        <form action="{% url "categorias:crear" %}" method='POST'>
+            {% csrf_token %}
+            <label for="nombre">Nombre categoría</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre de la categoría" >
+            
+            <label for="descripcion">Descripción</label>
+            <input type="text" name="descripcion" id="descripcion" placeholder="Ingrese la descripción de la categoría" >
+
+            <button class="boton" type="submit">Guardar categoría</button>
+        </form>
+    </div>
+{% endblock  %}
