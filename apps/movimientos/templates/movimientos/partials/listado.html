@@ -1,7 +1,6 @@
 <table border="1">
     <thead>
         <tr>
-        <th># movimiento</th>
         <th>Producto</th>
         <th>Cantidad</th>
         <th>Almacen</th>
@@ -11,7 +10,6 @@
     <tbody>
     {% for m in movimientos_stock %}
         <tr>
-            <td><strong>{{ m.id }}</strong></td>
             <td>{{ m.producto.nombre }}</td>
             <td>{{ m.cantidad }}</td>
             <td>{{ m.almacen }}</td>

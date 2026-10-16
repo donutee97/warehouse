@@ -9,29 +9,27 @@
     </div>
 
     <div class="contenedor-body">
-        <form action="{% url "proveedores:crear" %}" method="POST">
-            {% csrf_token %}
-            <p>
-                <label>Razón social</label>
-                <input type="text" id="razon_social" name='razon_social' required>
-            </p>
-
-            <p>
-                <label>NIT/RUT</label>
-                <input type="text" id="nit_rut" name='nit_rut' required>
-            </p>
-
-            <p>
-                <label>Email</label>
-                <input type="email" id="email" name='email' required>
-            </p>
-
-            <p>
-                <label>Teléfono</label>
-                <input type="text" id="telefono" name='telefono' required>
-            </p>
-
-            <button class="boton" type="submit">Guardar proveedor</button>
-        </form>
+        <div style="border: #000 1px solid; padding: 30px; width: 50%; margin:auto; border-radius:10px">
+            <form action="{% url "proveedores:crear" %}" method="POST">
+                {% csrf_token %}
+                <p>
+                    <label>Razón social</label>
+                    <input type="text" id="razon_social" name='razon_social' required>
+                </p>
+                <p>
+                    <label>NIT/RUT</label>
+                    <input type="text" id="nit_rut" name='nit_rut' required>
+                </p>
+                <p>
+                    <label>Email</label>
+                    <input type="email" id="email" name='email' required>
+                </p>
+                <p>
+                    <label>Teléfono</label>
+                    <input type="text" id="telefono" name='telefono' required>
+                </p>
+                <p><button class="boton" type="submit">Guardar proveedor</button></p>
+            </form>
+        </div>
     </div>
 {% endblock %}

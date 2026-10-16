@@ -1,22 +1,23 @@
 {% extends "base.html" %}
 
-{% block title %}Lista de movimientos de stock{% endblock %}
+{% block title %}Lista de stock de inventario{% endblock %}
 
 {% block content %}
     <div class="encabezado-body">
-        <h1>Movimientos de stock</h1>
+        <h1>Listado de stock de inventario</h1>
     </div>
 
     {% if movimientos_stock %}
     <div class="contenedor-body">
         <div
-            hx-get="{% url "movimientos:movimientos_stock" %}"
+            hx-get="{% url "movimientos:listar" %}"
             hx-trigger="load"
             hx-swap="outerHTML">
-            <p>Cargando productos...</p>
+            <p>Cargando stock...</p>
         </div>
     </div>
     {% else %}
-        <h3 style="text-align: center;">No hay movimientos</h3>
+        <h3 style="text-align: center;">No hay stock de inventario</h3>
     {% endif %}
 {% endblock %}
+
