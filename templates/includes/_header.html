@@ -1,7 +1,8 @@
-<header class="header">
-  <div>
+{% load static %}<header class="header">
+    <div><img src="{% static 'images/logo.png' %}" alt="logo" style="width: 60px; height: auto;" ></div>
     <h2>
-      <a style="text-decoration: none" href="{% url 'index' %}">WareHouse</a>
+      <a style="text-decoration: none" href="{% url 'index' %}">Panel de administración WareHouse</a>
     </h2>
-  </div>
+    <button><a style="text-decoration: none"href="{% url 'admin:index' %}"><strong>Admin</strong></a></button>
+    
 </header>
